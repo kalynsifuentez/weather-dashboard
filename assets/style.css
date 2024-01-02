@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #fff;
+    color: #00171f;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1 {
+color: white;
+}
+.btn {
+  width: max-width;
+}
+#forecast {
+  margin-left: 230px;
+  padding-top: 30px;
+}
+#current-weather {
+border: 1px solid black;
+}
+
+#bottom-container {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+h6 {
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#header {
+  margin: 0 auto 50px auto;
+  width: 100%;
+  padding: 30px;
+  padding-left: 95px;
+  background: #003459;
+  border-bottom: 3px solid #00a8e8;
+  text-align: left;
+}
