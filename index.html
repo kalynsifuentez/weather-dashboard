@@ -20,63 +20,37 @@
       <div class="row">
         <div class="col-12 col-md-8 col-lg-3">
           <h3>Today:</h3>
-          <form>
+          <form id="search-form">
             <div class="mb-3">
               <input
-                type="city" placeholder="Enter City Name" spellcheck="false"
-                class="form"
+                type="text"
+                placeholder="Enter City Name"
+                spellcheck="false"
+                class="form banana"
                 aria-describedby="city-text"
               />
             </div>
-            <button type="submit" class="btn-primary">Search</button>
+            <button type="submit" class="btn-primary btn">Search</button>
           </form>
-          <div id="bottom-container">
+          <div id="bottom-container"></div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-9 pb-3">
+          <div id="currentWeather">
+            <!-- <h3 class="city" id="htitle">San Antonio</h3>
+            <p id="date"></p>
+            <ul>
+              <li class="current-temp">Temperature</li>
+              <li class="wind">Wind Speed</li>
+              <li class="humidity">Humidity</li>
+            </ul> -->
+          </div>
+          <div id="forecast" class="col-12 col-md-4 col-lg-9 pt-5">
+            <!-- <h3 id="htitle">5 Day Forecast</h3> -->
           </div>
         </div>
-
-        <div id="current-weather" class="col-12 col-md-4 col-lg-9">
-          <h3 class="city">San Antonio</h3>
-          <p id="date"></p>
-          <ul>
-            <li class="current-temp"></li>
-            <li class="wind"></li>
-            <li class="humidity"></li>
-          </ul>
-        </div>
       </div>
-
-      <div id="forecast" class="">
-        <h3>5-Day Forecast:</h3>
-      </div>
-    </div>
     </section>
     <script src="./assets/script.js"></script>
-
-    <script>
-      const apiKey = "34992775f2f46c9b567e8fc38dba4aac";
-      const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
-
-const searchBox = document.querySelector(".mb-3 input");
-const searchBtn = document.querySelector(".btn-primary");
-var city = (".mb-3 input")
-      async function checkWeather(city) {
-        const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-        var data = await response.json();
-
-        console.log(data);
-
-        document.querySelector(".city").innerHTML = data.name;
-        document.querySelector(".current-temp").innerHTML = "Temperature: " + Math.round(data.main.temp) + "°F";
-        document.querySelector(".wind").innerHTML = "Wind Speed: " + data.wind.speed + " km";
-        document.querySelector(".humidity").innerHTML = "Humidity: " + data.main.humidity + "%";
-
-      }
-
-      searchBtn.addEventListener("click", ()=> {
-        checkWeather(searchBox.value);
-      })
-
-      checkWeather();
-    </script>
   </body>
 </html>

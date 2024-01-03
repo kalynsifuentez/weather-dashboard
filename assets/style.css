@@ -14,15 +14,13 @@
   h1 {
 color: white;
 }
-.btn {
-  width: max-width;
+
+#htitle {
+  margin-left: 30px;
 }
-#forecast {
-  margin-left: 230px;
-  padding-top: 30px;
-}
+
 #current-weather {
-border: 1px solid black;
+border-bottom: 1px solid black;
 }
 
 #bottom-container {
@@ -31,12 +29,6 @@ border: 1px solid black;
 
 ul {
   list-style: none;
-}
-
-h6 {
-  border: 1px solid black;
-  margin-top: 10px;
-  padding: 5px;
 }
 
 #header {
