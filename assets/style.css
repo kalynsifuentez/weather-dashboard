@@ -23,8 +23,9 @@ color: white;
 border-bottom: 1px solid black;
 }
 
-#bottom-container {
+#searched-cities {
   margin-top: 20px;
+  border: 3px solid black;
 }
 
 ul {

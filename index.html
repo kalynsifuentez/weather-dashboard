@@ -16,41 +16,32 @@
       <h1>Weather Dashboard</h1>
     </header>
 
-    <section class="container my-5">
+    <main class="container my-5">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-3">
-          <h3>Today:</h3>
+          <h3>Where?</h3>
           <form id="search-form">
             <div class="mb-3">
               <input
                 type="text"
                 placeholder="Enter City Name"
                 spellcheck="false"
-                class="form banana"
+                class="form"
                 aria-describedby="city-text"
               />
             </div>
             <button type="submit" class="btn-primary btn">Search</button>
           </form>
-          <div id="bottom-container"></div>
+          <div id="searched-cities">City</div>
         </div>
-
-        <div class="col-12 col-md-4 col-lg-9 pb-3">
-          <div id="currentWeather">
-            <!-- <h3 class="city" id="htitle">San Antonio</h3>
-            <p id="date"></p>
-            <ul>
-              <li class="current-temp">Temperature</li>
-              <li class="wind">Wind Speed</li>
-              <li class="humidity">Humidity</li>
-            </ul> -->
-          </div>
-          <div id="forecast" class="col-12 col-md-4 col-lg-9 pt-5">
-            <!-- <h3 id="htitle">5 Day Forecast</h3> -->
+        <div class="row">
+          <div class="col align-self-start">
+            <div id="currentWeather"></div>
+            <div id="forecast" class="col-12 col-md-4 col-lg-9 pt-5"></div>
           </div>
         </div>
       </div>
-    </section>
+    </main>
     <script src="./assets/script.js"></script>
   </body>
 </html>
